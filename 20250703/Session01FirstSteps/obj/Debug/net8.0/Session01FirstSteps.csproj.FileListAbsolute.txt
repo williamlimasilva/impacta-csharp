@@ -1,0 +1,15 @@
+C:\Workspace\.NET\CourseCSHARP\Session01FirstSteps\bin\Debug\net8.0\Session01FirstSteps.exe
+C:\Workspace\.NET\CourseCSHARP\Session01FirstSteps\bin\Debug\net8.0\Session01FirstSteps.deps.json
+C:\Workspace\.NET\CourseCSHARP\Session01FirstSteps\bin\Debug\net8.0\Session01FirstSteps.runtimeconfig.json
+C:\Workspace\.NET\CourseCSHARP\Session01FirstSteps\bin\Debug\net8.0\Session01FirstSteps.dll
+C:\Workspace\.NET\CourseCSHARP\Session01FirstSteps\bin\Debug\net8.0\Session01FirstSteps.pdb
+C:\Workspace\.NET\CourseCSHARP\Session01FirstSteps\obj\Debug\net8.0\Session01FirstSteps.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspace\.NET\CourseCSHARP\Session01FirstSteps\obj\Debug\net8.0\Session01FirstSteps.AssemblyInfoInputs.cache
+C:\Workspace\.NET\CourseCSHARP\Session01FirstSteps\obj\Debug\net8.0\Session01FirstSteps.AssemblyInfo.cs
+C:\Workspace\.NET\CourseCSHARP\Session01FirstSteps\obj\Debug\net8.0\Session01FirstSteps.csproj.CoreCompileInputs.cache
+C:\Workspace\.NET\CourseCSHARP\Session01FirstSteps\obj\Debug\net8.0\Session01FirstSteps.sourcelink.json
+C:\Workspace\.NET\CourseCSHARP\Session01FirstSteps\obj\Debug\net8.0\Session01FirstSteps.dll
+C:\Workspace\.NET\CourseCSHARP\Session01FirstSteps\obj\Debug\net8.0\refint\Session01FirstSteps.dll
+C:\Workspace\.NET\CourseCSHARP\Session01FirstSteps\obj\Debug\net8.0\Session01FirstSteps.pdb
+C:\Workspace\.NET\CourseCSHARP\Session01FirstSteps\obj\Debug\net8.0\Session01FirstSteps.genruntimeconfig.cache
+C:\Workspace\.NET\CourseCSHARP\Session01FirstSteps\obj\Debug\net8.0\ref\Session01FirstSteps.dll

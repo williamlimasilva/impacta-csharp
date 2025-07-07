@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\MiniCaixaEletronicoMultiplas",
+    "\\MiniCaixaEletronicoMultiplas\\Controller",
+    "\\MiniCaixaEletronicoMultiplas\\Data",
+    "\\MiniCaixaEletronicoMultiplas\\Models",
+    "\\MiniCaixaEletronicoMultiplas\\Views"
+  ],
+  "SelectedNode": "\\MiniCaixaEletronicoMultiplas\\Controller\\ContraController.cs",
+  "PreviewInSolutionExplorer": false
+}

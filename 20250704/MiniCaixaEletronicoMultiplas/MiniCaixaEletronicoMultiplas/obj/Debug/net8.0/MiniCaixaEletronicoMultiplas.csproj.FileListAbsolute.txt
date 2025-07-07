@@ -1,0 +1,14 @@
+C:\Workspace\.NET\MiniCaixaEletronicoMultiplas\MiniCaixaEletronicoMultiplas\obj\Debug\net8.0\MiniCaixaEletronicoMultiplas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspace\.NET\MiniCaixaEletronicoMultiplas\MiniCaixaEletronicoMultiplas\obj\Debug\net8.0\MiniCaixaEletronicoMultiplas.AssemblyInfoInputs.cache
+C:\Workspace\.NET\MiniCaixaEletronicoMultiplas\MiniCaixaEletronicoMultiplas\obj\Debug\net8.0\MiniCaixaEletronicoMultiplas.AssemblyInfo.cs
+C:\Workspace\.NET\MiniCaixaEletronicoMultiplas\MiniCaixaEletronicoMultiplas\obj\Debug\net8.0\MiniCaixaEletronicoMultiplas.csproj.CoreCompileInputs.cache
+C:\Workspace\.NET\MiniCaixaEletronicoMultiplas\MiniCaixaEletronicoMultiplas\bin\Debug\net8.0\MiniCaixaEletronicoMultiplas.exe
+C:\Workspace\.NET\MiniCaixaEletronicoMultiplas\MiniCaixaEletronicoMultiplas\bin\Debug\net8.0\MiniCaixaEletronicoMultiplas.deps.json
+C:\Workspace\.NET\MiniCaixaEletronicoMultiplas\MiniCaixaEletronicoMultiplas\bin\Debug\net8.0\MiniCaixaEletronicoMultiplas.runtimeconfig.json
+C:\Workspace\.NET\MiniCaixaEletronicoMultiplas\MiniCaixaEletronicoMultiplas\bin\Debug\net8.0\MiniCaixaEletronicoMultiplas.dll
+C:\Workspace\.NET\MiniCaixaEletronicoMultiplas\MiniCaixaEletronicoMultiplas\bin\Debug\net8.0\MiniCaixaEletronicoMultiplas.pdb
+C:\Workspace\.NET\MiniCaixaEletronicoMultiplas\MiniCaixaEletronicoMultiplas\obj\Debug\net8.0\MiniCaixaEletronicoMultiplas.dll
+C:\Workspace\.NET\MiniCaixaEletronicoMultiplas\MiniCaixaEletronicoMultiplas\obj\Debug\net8.0\refint\MiniCaixaEletronicoMultiplas.dll
+C:\Workspace\.NET\MiniCaixaEletronicoMultiplas\MiniCaixaEletronicoMultiplas\obj\Debug\net8.0\MiniCaixaEletronicoMultiplas.pdb
+C:\Workspace\.NET\MiniCaixaEletronicoMultiplas\MiniCaixaEletronicoMultiplas\obj\Debug\net8.0\MiniCaixaEletronicoMultiplas.genruntimeconfig.cache
+C:\Workspace\.NET\MiniCaixaEletronicoMultiplas\MiniCaixaEletronicoMultiplas\obj\Debug\net8.0\ref\MiniCaixaEletronicoMultiplas.dll

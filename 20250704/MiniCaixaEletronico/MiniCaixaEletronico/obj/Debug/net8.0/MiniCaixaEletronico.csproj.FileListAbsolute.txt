@@ -1,0 +1,14 @@
+C:\Workspace\.NET\MiniCaixaEletronico\MiniCaixaEletronico\obj\Debug\net8.0\MiniCaixaEletronico.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspace\.NET\MiniCaixaEletronico\MiniCaixaEletronico\obj\Debug\net8.0\MiniCaixaEletronico.AssemblyInfoInputs.cache
+C:\Workspace\.NET\MiniCaixaEletronico\MiniCaixaEletronico\obj\Debug\net8.0\MiniCaixaEletronico.AssemblyInfo.cs
+C:\Workspace\.NET\MiniCaixaEletronico\MiniCaixaEletronico\obj\Debug\net8.0\MiniCaixaEletronico.csproj.CoreCompileInputs.cache
+C:\Workspace\.NET\MiniCaixaEletronico\MiniCaixaEletronico\bin\Debug\net8.0\MiniCaixaEletronico.exe
+C:\Workspace\.NET\MiniCaixaEletronico\MiniCaixaEletronico\bin\Debug\net8.0\MiniCaixaEletronico.deps.json
+C:\Workspace\.NET\MiniCaixaEletronico\MiniCaixaEletronico\bin\Debug\net8.0\MiniCaixaEletronico.runtimeconfig.json
+C:\Workspace\.NET\MiniCaixaEletronico\MiniCaixaEletronico\bin\Debug\net8.0\MiniCaixaEletronico.dll
+C:\Workspace\.NET\MiniCaixaEletronico\MiniCaixaEletronico\bin\Debug\net8.0\MiniCaixaEletronico.pdb
+C:\Workspace\.NET\MiniCaixaEletronico\MiniCaixaEletronico\obj\Debug\net8.0\MiniCaixaEletronico.dll
+C:\Workspace\.NET\MiniCaixaEletronico\MiniCaixaEletronico\obj\Debug\net8.0\refint\MiniCaixaEletronico.dll
+C:\Workspace\.NET\MiniCaixaEletronico\MiniCaixaEletronico\obj\Debug\net8.0\MiniCaixaEletronico.pdb
+C:\Workspace\.NET\MiniCaixaEletronico\MiniCaixaEletronico\obj\Debug\net8.0\MiniCaixaEletronico.genruntimeconfig.cache
+C:\Workspace\.NET\MiniCaixaEletronico\MiniCaixaEletronico\obj\Debug\net8.0\ref\MiniCaixaEletronico.dll

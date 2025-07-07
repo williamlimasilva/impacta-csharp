@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Workspace\\.NET\\MiniCaixaEletronico2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F21D358D-D43D-4146-9B40-85A330F40D66}|MiniCaixaEletronico2\\MiniCaixaEletronico2.csproj|c:\\workspace\\.net\\minicaixaeletronico2\\minicaixaeletronico2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F21D358D-D43D-4146-9B40-85A330F40D66}|MiniCaixaEletronico2\\MiniCaixaEletronico2.csproj|solutionrelative:minicaixaeletronico2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F21D358D-D43D-4146-9B40-85A330F40D66}|MiniCaixaEletronico2\\MiniCaixaEletronico2.csproj|c:\\workspace\\.net\\minicaixaeletronico2\\minicaixaeletronico2\\data\\conta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F21D358D-D43D-4146-9B40-85A330F40D66}|MiniCaixaEletronico2\\MiniCaixaEletronico2.csproj|solutionrelative:minicaixaeletronico2\\data\\conta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F21D358D-D43D-4146-9B40-85A330F40D66}|MiniCaixaEletronico2\\MiniCaixaEletronico2.csproj|c:\\workspace\\.net\\minicaixaeletronico2\\minicaixaeletronico2\\business\\contaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F21D358D-D43D-4146-9B40-85A330F40D66}|MiniCaixaEletronico2\\MiniCaixaEletronico2.csproj|solutionrelative:minicaixaeletronico2\\business\\contaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F21D358D-D43D-4146-9B40-85A330F40D66}|MiniCaixaEletronico2\\MiniCaixaEletronico2.csproj|c:\\workspace\\.net\\minicaixaeletronico2\\minicaixaeletronico2\\data\\contarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F21D358D-D43D-4146-9B40-85A330F40D66}|MiniCaixaEletronico2\\MiniCaixaEletronico2.csproj|solutionrelative:minicaixaeletronico2\\data\\contarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ContaService.cs",
+              "DocumentMoniker": "C:\\Workspace\\.NET\\MiniCaixaEletronico2\\MiniCaixaEletronico2\\Business\\ContaService.cs",
+              "RelativeDocumentMoniker": "MiniCaixaEletronico2\\Business\\ContaService.cs",
+              "ToolTip": "C:\\Workspace\\.NET\\MiniCaixaEletronico2\\MiniCaixaEletronico2\\Business\\ContaService.cs",
+              "RelativeToolTip": "MiniCaixaEletronico2\\Business\\ContaService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T13:37:32.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ContaRepositorio.cs",
+              "DocumentMoniker": "C:\\Workspace\\.NET\\MiniCaixaEletronico2\\MiniCaixaEletronico2\\Data\\ContaRepositorio.cs",
+              "RelativeDocumentMoniker": "MiniCaixaEletronico2\\Data\\ContaRepositorio.cs",
+              "ToolTip": "C:\\Workspace\\.NET\\MiniCaixaEletronico2\\MiniCaixaEletronico2\\Data\\ContaRepositorio.cs",
+              "RelativeToolTip": "MiniCaixaEletronico2\\Data\\ContaRepositorio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T13:27:24.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Conta.cs",
+              "DocumentMoniker": "C:\\Workspace\\.NET\\MiniCaixaEletronico2\\MiniCaixaEletronico2\\Data\\Conta.cs",
+              "RelativeDocumentMoniker": "MiniCaixaEletronico2\\Data\\Conta.cs",
+              "ToolTip": "C:\\Workspace\\.NET\\MiniCaixaEletronico2\\MiniCaixaEletronico2\\Data\\Conta.cs",
+              "RelativeToolTip": "MiniCaixaEletronico2\\Data\\Conta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T13:06:52.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Workspace\\.NET\\MiniCaixaEletronico2\\MiniCaixaEletronico2\\Program.cs",
+              "RelativeDocumentMoniker": "MiniCaixaEletronico2\\Program.cs",
+              "ToolTip": "C:\\Workspace\\.NET\\MiniCaixaEletronico2\\MiniCaixaEletronico2\\Program.cs",
+              "RelativeToolTip": "MiniCaixaEletronico2\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T12:49:38.783Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

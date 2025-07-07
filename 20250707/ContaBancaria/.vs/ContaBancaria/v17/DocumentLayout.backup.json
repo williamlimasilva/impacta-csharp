@@ -1,0 +1,93 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Workspace\\.NET\\ContaBancaria\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{35F6B1A5-D943-4375-93A5-E5F52941F3ED}|ContaBancaria\\ContaBancaria.csproj|c:\\workspace\\.net\\contabancaria\\contabancaria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35F6B1A5-D943-4375-93A5-E5F52941F3ED}|ContaBancaria\\ContaBancaria.csproj|solutionrelative:contabancaria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35F6B1A5-D943-4375-93A5-E5F52941F3ED}|ContaBancaria\\ContaBancaria.csproj|c:\\workspace\\.net\\contabancaria\\contabancaria\\contacorrente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35F6B1A5-D943-4375-93A5-E5F52941F3ED}|ContaBancaria\\ContaBancaria.csproj|solutionrelative:contabancaria\\contacorrente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35F6B1A5-D943-4375-93A5-E5F52941F3ED}|ContaBancaria\\ContaBancaria.csproj|c:\\workspace\\.net\\contabancaria\\contabancaria\\contapoupanca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35F6B1A5-D943-4375-93A5-E5F52941F3ED}|ContaBancaria\\ContaBancaria.csproj|solutionrelative:contabancaria\\contapoupanca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35F6B1A5-D943-4375-93A5-E5F52941F3ED}|ContaBancaria\\ContaBancaria.csproj|c:\\workspace\\.net\\contabancaria\\contabancaria\\conta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35F6B1A5-D943-4375-93A5-E5F52941F3ED}|ContaBancaria\\ContaBancaria.csproj|solutionrelative:contabancaria\\conta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Workspace\\.NET\\ContaBancaria\\ContaBancaria\\Program.cs",
+              "RelativeDocumentMoniker": "ContaBancaria\\Program.cs",
+              "ToolTip": "C:\\Workspace\\.NET\\ContaBancaria\\ContaBancaria\\Program.cs",
+              "RelativeToolTip": "ContaBancaria\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T12:21:00.275Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Conta.cs",
+              "DocumentMoniker": "C:\\Workspace\\.NET\\ContaBancaria\\ContaBancaria\\Conta.cs",
+              "RelativeDocumentMoniker": "ContaBancaria\\Conta.cs",
+              "ToolTip": "C:\\Workspace\\.NET\\ContaBancaria\\ContaBancaria\\Conta.cs",
+              "RelativeToolTip": "ContaBancaria\\Conta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T13:28:23.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ContaPoupanca.cs",
+              "DocumentMoniker": "C:\\Workspace\\.NET\\ContaBancaria\\ContaBancaria\\ContaPoupanca.cs",
+              "RelativeDocumentMoniker": "ContaBancaria\\ContaPoupanca.cs",
+              "ToolTip": "C:\\Workspace\\.NET\\ContaBancaria\\ContaBancaria\\ContaPoupanca.cs",
+              "RelativeToolTip": "ContaBancaria\\ContaPoupanca.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T13:25:47.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ContaCorrente.cs",
+              "DocumentMoniker": "C:\\Workspace\\.NET\\ContaBancaria\\ContaBancaria\\ContaCorrente.cs",
+              "RelativeDocumentMoniker": "ContaBancaria\\ContaCorrente.cs",
+              "ToolTip": "C:\\Workspace\\.NET\\ContaBancaria\\ContaBancaria\\ContaCorrente.cs",
+              "RelativeToolTip": "ContaBancaria\\ContaCorrente.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA3wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T13:25:34.167Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

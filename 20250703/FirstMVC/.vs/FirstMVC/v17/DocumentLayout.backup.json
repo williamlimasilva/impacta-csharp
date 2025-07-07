@@ -1,0 +1,143 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Workspace\\.NET\\FirstMVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{39648ECA-BD2D-4F41-85AA-8D76E55F1C0E}|FirstMVC\\FirstMVC.csproj|c:\\workspace\\.net\\firstmvc\\firstmvc\\views\\produtos\\clientes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{39648ECA-BD2D-4F41-85AA-8D76E55F1C0E}|FirstMVC\\FirstMVC.csproj|solutionrelative:firstmvc\\views\\produtos\\clientes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39648ECA-BD2D-4F41-85AA-8D76E55F1C0E}|FirstMVC\\FirstMVC.csproj|c:\\workspace\\.net\\firstmvc\\firstmvc\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{39648ECA-BD2D-4F41-85AA-8D76E55F1C0E}|FirstMVC\\FirstMVC.csproj|solutionrelative:firstmvc\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39648ECA-BD2D-4F41-85AA-8D76E55F1C0E}|FirstMVC\\FirstMVC.csproj|c:\\workspace\\.net\\firstmvc\\firstmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{39648ECA-BD2D-4F41-85AA-8D76E55F1C0E}|FirstMVC\\FirstMVC.csproj|solutionrelative:firstmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39648ECA-BD2D-4F41-85AA-8D76E55F1C0E}|FirstMVC\\FirstMVC.csproj|c:\\workspace\\.net\\firstmvc\\firstmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{39648ECA-BD2D-4F41-85AA-8D76E55F1C0E}|FirstMVC\\FirstMVC.csproj|solutionrelative:firstmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39648ECA-BD2D-4F41-85AA-8D76E55F1C0E}|FirstMVC\\FirstMVC.csproj|c:\\workspace\\.net\\firstmvc\\firstmvc\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{39648ECA-BD2D-4F41-85AA-8D76E55F1C0E}|FirstMVC\\FirstMVC.csproj|solutionrelative:firstmvc\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39648ECA-BD2D-4F41-85AA-8D76E55F1C0E}|FirstMVC\\FirstMVC.csproj|c:\\workspace\\.net\\firstmvc\\firstmvc\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{39648ECA-BD2D-4F41-85AA-8D76E55F1C0E}|FirstMVC\\FirstMVC.csproj|solutionrelative:firstmvc\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39648ECA-BD2D-4F41-85AA-8D76E55F1C0E}|FirstMVC\\FirstMVC.csproj|c:\\workspace\\.net\\firstmvc\\firstmvc\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39648ECA-BD2D-4F41-85AA-8D76E55F1C0E}|FirstMVC\\FirstMVC.csproj|solutionrelative:firstmvc\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Workspace\\.NET\\FirstMVC\\FirstMVC\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "FirstMVC\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Workspace\\.NET\\FirstMVC\\FirstMVC\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "FirstMVC\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-03T18:34:28.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Workspace\\.NET\\FirstMVC\\FirstMVC\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "FirstMVC\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Workspace\\.NET\\FirstMVC\\FirstMVC\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "FirstMVC\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-03T18:34:24.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Workspace\\.NET\\FirstMVC\\FirstMVC\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "FirstMVC\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Workspace\\.NET\\FirstMVC\\FirstMVC\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "FirstMVC\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-07-03T18:26:13.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Workspace\\.NET\\FirstMVC\\FirstMVC\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "FirstMVC\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Workspace\\.NET\\FirstMVC\\FirstMVC\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "FirstMVC\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-07-03T18:26:05.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Workspace\\.NET\\FirstMVC\\FirstMVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "FirstMVC\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Workspace\\.NET\\FirstMVC\\FirstMVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "FirstMVC\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAB+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-03T18:19:46.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProdutosController.cs",
+              "DocumentMoniker": "C:\\Workspace\\.NET\\FirstMVC\\FirstMVC\\Controllers\\ProdutosController.cs",
+              "RelativeDocumentMoniker": "FirstMVC\\Controllers\\ProdutosController.cs",
+              "ToolTip": "C:\\Workspace\\.NET\\FirstMVC\\FirstMVC\\Controllers\\ProdutosController.cs",
+              "RelativeToolTip": "FirstMVC\\Controllers\\ProdutosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T18:17:26.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Clientes.cshtml",
+              "DocumentMoniker": "C:\\Workspace\\.NET\\FirstMVC\\FirstMVC\\Views\\Produtos\\Clientes.cshtml",
+              "RelativeDocumentMoniker": "FirstMVC\\Views\\Produtos\\Clientes.cshtml",
+              "ToolTip": "C:\\Workspace\\.NET\\FirstMVC\\FirstMVC\\Views\\Produtos\\Clientes.cshtml",
+              "RelativeToolTip": "FirstMVC\\Views\\Produtos\\Clientes.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-03T18:13:08.61Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Workspace\\.NET\\MiniCaixaEletronicoMultiplas\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D9A40A12-02DD-4F2D-945B-035C590442B0}|MiniCaixaEletronicoMultiplas\\MiniCaixaEletronicoMultiplas.csproj|c:\\workspace\\.net\\minicaixaeletronicomultiplas\\minicaixaeletronicomultiplas\\controller\\contracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9A40A12-02DD-4F2D-945B-035C590442B0}|MiniCaixaEletronicoMultiplas\\MiniCaixaEletronicoMultiplas.csproj|solutionrelative:minicaixaeletronicomultiplas\\controller\\contracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9A40A12-02DD-4F2D-945B-035C590442B0}|MiniCaixaEletronicoMultiplas\\MiniCaixaEletronicoMultiplas.csproj|c:\\workspace\\.net\\minicaixaeletronicomultiplas\\minicaixaeletronicomultiplas\\views\\contaview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9A40A12-02DD-4F2D-945B-035C590442B0}|MiniCaixaEletronicoMultiplas\\MiniCaixaEletronicoMultiplas.csproj|solutionrelative:minicaixaeletronicomultiplas\\views\\contaview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9A40A12-02DD-4F2D-945B-035C590442B0}|MiniCaixaEletronicoMultiplas\\MiniCaixaEletronicoMultiplas.csproj|c:\\workspace\\.net\\minicaixaeletronicomultiplas\\minicaixaeletronicomultiplas\\data\\contarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9A40A12-02DD-4F2D-945B-035C590442B0}|MiniCaixaEletronicoMultiplas\\MiniCaixaEletronicoMultiplas.csproj|solutionrelative:minicaixaeletronicomultiplas\\data\\contarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9A40A12-02DD-4F2D-945B-035C590442B0}|MiniCaixaEletronicoMultiplas\\MiniCaixaEletronicoMultiplas.csproj|c:\\workspace\\.net\\minicaixaeletronicomultiplas\\minicaixaeletronicomultiplas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9A40A12-02DD-4F2D-945B-035C590442B0}|MiniCaixaEletronicoMultiplas\\MiniCaixaEletronicoMultiplas.csproj|solutionrelative:minicaixaeletronicomultiplas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ContaRepositorio.cs",
+              "DocumentMoniker": "C:\\Workspace\\.NET\\MiniCaixaEletronicoMultiplas\\MiniCaixaEletronicoMultiplas\\Data\\ContaRepositorio.cs",
+              "RelativeDocumentMoniker": "MiniCaixaEletronicoMultiplas\\Data\\ContaRepositorio.cs",
+              "ToolTip": "C:\\Workspace\\.NET\\MiniCaixaEletronicoMultiplas\\MiniCaixaEletronicoMultiplas\\Data\\ContaRepositorio.cs",
+              "RelativeToolTip": "MiniCaixaEletronicoMultiplas\\Data\\ContaRepositorio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T18:39:19.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ContraController.cs",
+              "DocumentMoniker": "C:\\Workspace\\.NET\\MiniCaixaEletronicoMultiplas\\MiniCaixaEletronicoMultiplas\\Controller\\ContraController.cs",
+              "RelativeDocumentMoniker": "MiniCaixaEletronicoMultiplas\\Controller\\ContraController.cs",
+              "ToolTip": "C:\\Workspace\\.NET\\MiniCaixaEletronicoMultiplas\\MiniCaixaEletronicoMultiplas\\Controller\\ContraController.cs",
+              "RelativeToolTip": "MiniCaixaEletronicoMultiplas\\Controller\\ContraController.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAD4v1oAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T18:39:10.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ContaView.cs",
+              "DocumentMoniker": "C:\\Workspace\\.NET\\MiniCaixaEletronicoMultiplas\\MiniCaixaEletronicoMultiplas\\Views\\ContaView.cs",
+              "RelativeDocumentMoniker": "MiniCaixaEletronicoMultiplas\\Views\\ContaView.cs",
+              "ToolTip": "C:\\Workspace\\.NET\\MiniCaixaEletronicoMultiplas\\MiniCaixaEletronicoMultiplas\\Views\\ContaView.cs",
+              "RelativeToolTip": "MiniCaixaEletronicoMultiplas\\Views\\ContaView.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAApwAgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T18:37:35.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Workspace\\.NET\\MiniCaixaEletronicoMultiplas\\MiniCaixaEletronicoMultiplas\\Program.cs",
+              "RelativeDocumentMoniker": "MiniCaixaEletronicoMultiplas\\Program.cs",
+              "ToolTip": "C:\\Workspace\\.NET\\MiniCaixaEletronicoMultiplas\\MiniCaixaEletronicoMultiplas\\Program.cs",
+              "RelativeToolTip": "MiniCaixaEletronicoMultiplas\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T18:38:05.75Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
