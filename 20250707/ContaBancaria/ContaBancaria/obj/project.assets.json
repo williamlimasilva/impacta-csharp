@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Workspace\\.NET\\ContaBancaria\\ContaBancaria\\ContaBancaria.csproj",
+      "projectUniqueName": "C:\\Workspace\\.NET\\CourseCSHARP\\20250707\\ContaBancaria\\ContaBancaria\\ContaBancaria.csproj",
       "projectName": "ContaBancaria",
-      "projectPath": "C:\\Workspace\\.NET\\ContaBancaria\\ContaBancaria\\ContaBancaria.csproj",
+      "projectPath": "C:\\Workspace\\.NET\\CourseCSHARP\\20250707\\ContaBancaria\\ContaBancaria\\ContaBancaria.csproj",
       "packagesPath": "C:\\Users\\w.lima.da.silva\\.nuget\\packages\\",
-      "outputPath": "C:\\Workspace\\.NET\\ContaBancaria\\ContaBancaria\\obj\\",
+      "outputPath": "C:\\Workspace\\.NET\\CourseCSHARP\\20250707\\ContaBancaria\\ContaBancaria\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

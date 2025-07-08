@@ -2,7 +2,7 @@
 
 namespace ContaBancaria
 {
-    public class ContaCorrente : Conta
+    public class ContaCorrente : Conta, ITributavel
     {
         private double LimiteChequeEspecial { get; set; }
 
@@ -32,6 +32,11 @@ namespace ContaBancaria
         {
             base.ExibirSaldo();
             Console.WriteLine($"Limite de Cheque Especial: R${LimiteChequeEspecial:F2}");
+        }
+
+        public double CalcularImposto()
+        {
+            return Saldo * 0.02;
         }
     }
 }

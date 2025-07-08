@@ -1,22 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Workspace\\.NET\\ContaBancaria\\",
+  "WorkspaceRootPath": "C:\\Workspace\\.NET\\CourseCSHARP\\20250707\\ContaBancaria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{35F6B1A5-D943-4375-93A5-E5F52941F3ED}|ContaBancaria\\ContaBancaria.csproj|c:\\workspace\\.net\\contabancaria\\contabancaria\\contacorrente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35F6B1A5-D943-4375-93A5-E5F52941F3ED}|ContaBancaria\\ContaBancaria.csproj|solutionrelative:contabancaria\\contacorrente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{35F6B1A5-D943-4375-93A5-E5F52941F3ED}|ContaBancaria\\ContaBancaria.csproj|c:\\workspace\\.net\\coursecsharp\\20250707\\contabancaria\\contabancaria\\saldoinsuficienteexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35F6B1A5-D943-4375-93A5-E5F52941F3ED}|ContaBancaria\\ContaBancaria.csproj|solutionrelative:contabancaria\\saldoinsuficienteexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35F6B1A5-D943-4375-93A5-E5F52941F3ED}|ContaBancaria\\ContaBancaria.csproj|c:\\workspace\\.net\\contabancaria\\contabancaria\\conta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{35F6B1A5-D943-4375-93A5-E5F52941F3ED}|ContaBancaria\\ContaBancaria.csproj|c:\\workspace\\.net\\coursecsharp\\20250707\\contabancaria\\contabancaria\\conta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35F6B1A5-D943-4375-93A5-E5F52941F3ED}|ContaBancaria\\ContaBancaria.csproj|solutionrelative:contabancaria\\conta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35F6B1A5-D943-4375-93A5-E5F52941F3ED}|ContaBancaria\\ContaBancaria.csproj|c:\\workspace\\.net\\contabancaria\\contabancaria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{35F6B1A5-D943-4375-93A5-E5F52941F3ED}|ContaBancaria\\ContaBancaria.csproj|c:\\workspace\\.net\\coursecsharp\\20250707\\contabancaria\\contabancaria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35F6B1A5-D943-4375-93A5-E5F52941F3ED}|ContaBancaria\\ContaBancaria.csproj|solutionrelative:contabancaria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35F6B1A5-D943-4375-93A5-E5F52941F3ED}|ContaBancaria\\ContaBancaria.csproj|c:\\workspace\\.net\\contabancaria\\contabancaria\\contapoupanca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{35F6B1A5-D943-4375-93A5-E5F52941F3ED}|ContaBancaria\\ContaBancaria.csproj|c:\\workspace\\.net\\coursecsharp\\20250707\\contabancaria\\contabancaria\\contacorrente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35F6B1A5-D943-4375-93A5-E5F52941F3ED}|ContaBancaria\\ContaBancaria.csproj|solutionrelative:contabancaria\\contacorrente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35F6B1A5-D943-4375-93A5-E5F52941F3ED}|ContaBancaria\\ContaBancaria.csproj|c:\\workspace\\.net\\coursecsharp\\20250707\\contabancaria\\contabancaria\\contapoupanca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35F6B1A5-D943-4375-93A5-E5F52941F3ED}|ContaBancaria\\ContaBancaria.csproj|solutionrelative:contabancaria\\contapoupanca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35F6B1A5-D943-4375-93A5-E5F52941F3ED}|ContaBancaria\\ContaBancaria.csproj|c:\\workspace\\.net\\coursecsharp\\20250707\\contabancaria\\contabancaria\\itributavel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35F6B1A5-D943-4375-93A5-E5F52941F3ED}|ContaBancaria\\ContaBancaria.csproj|solutionrelative:contabancaria\\itributavel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35F6B1A5-D943-4375-93A5-E5F52941F3ED}|ContaBancaria\\ContaBancaria.csproj|c:\\workspace\\.net\\coursecsharp\\20250707\\contabancaria\\contabancaria\\segurodevida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35F6B1A5-D943-4375-93A5-E5F52941F3ED}|ContaBancaria\\ContaBancaria.csproj|solutionrelative:contabancaria\\segurodevida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,19 +38,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Workspace\\.NET\\ContaBancaria\\ContaBancaria\\Program.cs",
+              "DocumentMoniker": "C:\\Workspace\\.NET\\CourseCSHARP\\20250707\\ContaBancaria\\ContaBancaria\\Program.cs",
               "RelativeDocumentMoniker": "ContaBancaria\\Program.cs",
-              "ToolTip": "C:\\Workspace\\.NET\\ContaBancaria\\ContaBancaria\\Program.cs",
+              "ToolTip": "C:\\Workspace\\.NET\\CourseCSHARP\\20250707\\ContaBancaria\\ContaBancaria\\Program.cs",
               "RelativeToolTip": "ContaBancaria\\Program.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwB0AAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAABAwDgAAABuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-07T12:21:00.275Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Conta.cs",
+              "DocumentMoniker": "C:\\Workspace\\.NET\\CourseCSHARP\\20250707\\ContaBancaria\\ContaBancaria\\Conta.cs",
+              "RelativeDocumentMoniker": "ContaBancaria\\Conta.cs",
+              "ToolTip": "C:\\Workspace\\.NET\\CourseCSHARP\\20250707\\ContaBancaria\\ContaBancaria\\Conta.cs",
+              "RelativeToolTip": "ContaBancaria\\Conta.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAUwC0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T13:28:23.724Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
@@ -48,39 +74,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Conta.cs",
-              "DocumentMoniker": "C:\\Workspace\\.NET\\ContaBancaria\\ContaBancaria\\Conta.cs",
-              "RelativeDocumentMoniker": "ContaBancaria\\Conta.cs",
-              "ToolTip": "C:\\Workspace\\.NET\\ContaBancaria\\ContaBancaria\\Conta.cs",
-              "RelativeToolTip": "ContaBancaria\\Conta.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAkwDAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "SaldoInsuficienteException.cs",
+              "DocumentMoniker": "C:\\Workspace\\.NET\\CourseCSHARP\\20250707\\ContaBancaria\\ContaBancaria\\SaldoInsuficienteException.cs",
+              "RelativeDocumentMoniker": "ContaBancaria\\SaldoInsuficienteException.cs",
+              "ToolTip": "C:\\Workspace\\.NET\\CourseCSHARP\\20250707\\ContaBancaria\\ContaBancaria\\SaldoInsuficienteException.cs",
+              "RelativeToolTip": "ContaBancaria\\SaldoInsuficienteException.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T13:28:23.724Z",
+              "WhenOpened": "2025-07-07T16:51:23.09Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
+              "Title": "SeguroDeVida.cs",
+              "DocumentMoniker": "C:\\Workspace\\.NET\\CourseCSHARP\\20250707\\ContaBancaria\\ContaBancaria\\SeguroDeVida.cs",
+              "RelativeDocumentMoniker": "ContaBancaria\\SeguroDeVida.cs",
+              "ToolTip": "C:\\Workspace\\.NET\\CourseCSHARP\\20250707\\ContaBancaria\\ContaBancaria\\SeguroDeVida.cs",
+              "RelativeToolTip": "ContaBancaria\\SeguroDeVida.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T16:23:00.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ITributavel.cs",
+              "DocumentMoniker": "C:\\Workspace\\.NET\\CourseCSHARP\\20250707\\ContaBancaria\\ContaBancaria\\ITributavel.cs",
+              "RelativeDocumentMoniker": "ContaBancaria\\ITributavel.cs",
+              "ToolTip": "C:\\Workspace\\.NET\\CourseCSHARP\\20250707\\ContaBancaria\\ContaBancaria\\ITributavel.cs",
+              "RelativeToolTip": "ContaBancaria\\ITributavel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T16:09:40.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ContaPoupanca.cs",
-              "DocumentMoniker": "C:\\Workspace\\.NET\\ContaBancaria\\ContaBancaria\\ContaPoupanca.cs",
+              "DocumentMoniker": "C:\\Workspace\\.NET\\CourseCSHARP\\20250707\\ContaBancaria\\ContaBancaria\\ContaPoupanca.cs",
               "RelativeDocumentMoniker": "ContaBancaria\\ContaPoupanca.cs",
-              "ToolTip": "C:\\Workspace\\.NET\\ContaBancaria\\ContaBancaria\\ContaPoupanca.cs",
+              "ToolTip": "C:\\Workspace\\.NET\\CourseCSHARP\\20250707\\ContaBancaria\\ContaBancaria\\ContaPoupanca.cs",
               "RelativeToolTip": "ContaBancaria\\ContaPoupanca.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-07T13:25:47.076Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "ContaCorrente.cs",
-              "DocumentMoniker": "C:\\Workspace\\.NET\\ContaBancaria\\ContaBancaria\\ContaCorrente.cs",
+              "DocumentMoniker": "C:\\Workspace\\.NET\\CourseCSHARP\\20250707\\ContaBancaria\\ContaBancaria\\ContaCorrente.cs",
               "RelativeDocumentMoniker": "ContaBancaria\\ContaCorrente.cs",
-              "ToolTip": "C:\\Workspace\\.NET\\ContaBancaria\\ContaBancaria\\ContaCorrente.cs",
+              "ToolTip": "C:\\Workspace\\.NET\\CourseCSHARP\\20250707\\ContaBancaria\\ContaBancaria\\ContaCorrente.cs",
               "RelativeToolTip": "ContaBancaria\\ContaCorrente.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAYwAYAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-07T13:25:34.167Z",
               "EditorCaption": ""

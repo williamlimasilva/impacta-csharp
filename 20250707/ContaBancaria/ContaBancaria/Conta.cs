@@ -30,14 +30,19 @@ namespace ContaBancaria
 
         public virtual bool Sacar(double valor)
         {
-            if (valor > 0 && Saldo >= valor)
+            if (valor <= 0)
             {
-                Saldo -= valor;
-                Console.WriteLine($"Saque de R${valor:F2} realizado com sucesso. Novo saldo: R${Saldo:F2}");
-                return true;
+                throw new ArgumentException("Valor de saque deve ser maior que zero.");
             }
-            Console.WriteLine("Saldo insuficiente ou valor inválido para saque");
-            return false;
+
+            if (Saldo < valor)
+            {
+                throw new SaldoInsuficienteException();
+            }
+
+            Saldo -= valor;
+            Console.WriteLine($"Saque de R${valor:F2} realizado com sucesso. Novo saldo: R${Saldo:F2}");
+            return true;
         }
 
         public virtual void ExibirSaldo()

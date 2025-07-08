@@ -1,0 +1,5 @@
+**Entity Framework**
+
+-- Package Manager Console --
+update-database
+add-migration CreateInitial
