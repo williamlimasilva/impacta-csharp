@@ -1,0 +1,40 @@
+@model IEnumerable<SessionEntity.Models.Grade>
+
+@{
+    ViewData["Title"] = "Turmas";
+}
+
+<h1>Turmas</h1>
+
+<p>
+    <a asp-controller="Grades" asp-action="Create" class="btn btn-primary">Criar Nova Turma</a>
+</p>
+
+@if (Model != null && Model.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nome da Turma</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.GradeName)</td>
+                    <td>
+                        <a asp-action="AlunosPorTurma" asp-route-id="@item.GradeId" class="btn btn-info btn-sm">Ver Alunos</a>
+                        <a asp-controller="Grades" asp-action="Edit" asp-route-id="@item.GradeId" class="btn btn-warning btn-sm">Editar</a>
+                        <a asp-controller="Grades" asp-action="Delete" asp-route-id="@item.GradeId" class="btn btn-danger btn-sm">Excluir</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Nenhuma turma cadastrada.</p>
+}

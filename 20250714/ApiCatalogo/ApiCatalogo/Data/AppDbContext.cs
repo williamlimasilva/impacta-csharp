@@ -15,7 +15,6 @@ namespace ApiCatalogo.Data
 
         public DbSet<Categoria> Categorias { get; set; } = null!;
 
-        public DbSet<Venda> Vendas { get; set; } = null!;
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -23,11 +22,7 @@ namespace ApiCatalogo.Data
             //Fluent API configuration for decimal preco em produto
             modelBuilder.Entity<Produto>()
                 .Property(p => p.Preco)
-                .HasColumnType("decimal(18,2)");
-
-            modelBuilder.Entity<Venda>()
-                .Property(v => v.ValorTotal)
-                .HasColumnType("decimal(18,2)");
+                .HasColumnType("decimal(18,2)");            
 
             //Insert Data for Seed Data
 

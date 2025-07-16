@@ -18,7 +18,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "type": "string"
+                    "$ref": "#/components/schemas/Categoria"
                   }
                 }
               },
@@ -26,7 +26,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "type": "string"
+                    "$ref": "#/components/schemas/Categoria"
                   }
                 }
               },
@@ -34,7 +34,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "type": "string"
+                    "$ref": "#/components/schemas/Categoria"
                   }
                 }
               }
@@ -94,6 +94,7 @@
         "tags": [
           "Categorias"
         ],
+        "operationId": "ObterCategoria",
         "parameters": [
           {
             "name": "id",
@@ -164,24 +165,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Categoria"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Categoria"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Categoria"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       },
@@ -202,58 +186,12 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Categoria"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Categoria"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Categoria"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
     },
-    "/Produtos/primeiro": {
-      "get": {
-        "tags": [
-          "Produtos"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Produto"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Produto"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Produto"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/Produtos": {
+    "/api/Produtos": {
       "get": {
         "tags": [
           "Produtos"
@@ -337,49 +275,12 @@
         }
       }
     },
-    "/Produtos/{id}": {
+    "/api/Produtos/{id}": {
       "get": {
         "tags": [
           "Produtos"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Produto"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Produto"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Produto"
-                }
-              }
-            }
-          }
-        }
-      },
-      "delete": {
-        "tags": [
-          "Produtos"
-        ],
+        "operationId": "ObterProduto",
         "parameters": [
           {
             "name": "id",
@@ -470,42 +371,25 @@
             }
           }
         }
-      }
-    },
-    "/Vendas": {
-      "get": {
+      },
+      "delete": {
         "tags": [
-          "Vendas"
+          "Produtos"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Venda"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Venda"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Venda"
-                  }
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
@@ -575,35 +459,6 @@
           },
           "categoria": {
             "$ref": "#/components/schemas/Categoria"
-          }
-        },
-        "additionalProperties": false
-      },
-      "Venda": {
-        "type": "object",
-        "properties": {
-          "vendaId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "dataVenda": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "valorTotal": {
-            "type": "number",
-            "format": "double"
-          },
-          "produtoId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "produtos": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Produto"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false

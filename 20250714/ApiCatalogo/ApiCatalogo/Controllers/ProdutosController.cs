@@ -1,111 +1,82 @@
-﻿using ApiCatalogo.Data;
-using ApiCatalogo.Models;
-using Microsoft.AspNetCore.Http;
+﻿using ApiCatalogo.Models;
+using ApiCatalogo.Repositories;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
 
 namespace ApiCatalogo.Controllers
 {
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
     public class ProdutosController : ControllerBase
     {
-        //Dependency Injection
-        private readonly AppDbContext _context;
-        public ProdutosController(AppDbContext context)
-        {
-            _context = context;
-        }
+        private readonly IRepository _repository;
 
-        //GET: api/<ProdutosController>/primeiro
-        [HttpGet("primeiro")]
-        public ActionResult<Produto> GetPrimeiro()
+        public ProdutosController(IRepository repository)
         {
-            var produto = _context.Produtos.FirstOrDefault();
-            if (produto is null)
-            {
-                return NotFound("Nenhum produto encontrado");
-            }
-            return Ok(produto);
+            _repository = repository;
         }
 
         // GET: api/<ProdutosController>
         [HttpGet]
-        public ActionResult<IEnumerable<Produto>> Get()
+        public async Task<ActionResult<IEnumerable<Produto>>> Get()
         {
-            var produtos = _context.Produtos.ToList();
-            if (produtos.IsNullOrEmpty())
-            {
-                return NotFound("No products found."); //HTTP 404 Not Found
-            }
-            else
-            {
-                return produtos; //HTTP 200 OK
-            }
+            var produtos = await _repository.GetAllAsync<Produto>();
+            return Ok(produtos);
         }
 
-        // GET api/<ProdutosController>/1
-        [HttpGet("{id:int}")]
-        public ActionResult<Produto> Get(int id)
-        { 
-            var produto = _context.Produtos.FirstOrDefault(p => p.ProdutoId == id);
-            if(produto is null)
+        // GET api/<ProdutosController>/5
+        [HttpGet("{id:int}", Name = "ObterProduto")]
+        public async Task<ActionResult<Produto>> Get(int id)
+        {
+            var produto = await _repository.GetByIdAsync<Produto>(id);
+            if (produto is null)
             {
-                return NotFound($"Product with ID {id} not found."); //HTTP 404 Not Found
+                return NotFound($"Product with ID {id} not found."); // HTTP 404 Not Found
             }
-            else
-            {
-                return produto; //HTTP 200 OK
-            }
+            return Ok(produto); // HTTP 200 OK
         }
 
         // POST api/<ProdutosController>
         [HttpPost]
-        public ActionResult<Produto> Post([FromBody] Produto produto)
+        public async Task<ActionResult<Produto>> Post([FromBody] Produto produto)
         {
-            if (produto.Equals(null))
-            {
-                return BadRequest("Product data is null."); //HTTP 400 Bad Request
-            }
-            else
-            {
-                _context.Produtos.Add(produto);
-                _context.SaveChanges();
-                return CreatedAtAction(nameof(Get), new { id = produto.ProdutoId }, produto); //HTTP 201 Created
-            }
-        }
-
-        // DELETE api/<ProdutosController>/1
-        [HttpDelete("{id:int}")]
-        public ActionResult<Produto> Delete(int id)
-        {
-            var produto = _context.Produtos.FirstOrDefault(p => p.ProdutoId == id);
             if (produto is null)
             {
-                return NotFound($"Product with ID {id} not found."); //HTTP 404 Not Found
+                return BadRequest("Product data is null."); // HTTP 400 Bad Request
             }
-            else
-            {
-                _context.Produtos.Remove(produto);
-                _context.SaveChanges();
-                return NoContent(); //HTTP 204 No Content
-            }
+
+            await _repository.AddAsync(produto);
+            await _repository.SaveChangesAsync();
+
+            return CreatedAtRoute("ObterProduto", new { id = produto.ProdutoId }, produto); // HTTP 201 Created
         }
 
-        // PUT api/<ProdutosController>/1
-        [HttpPut("{id}")]
-        public ActionResult<Produto> Put(int id, Produto produto)
+        // PUT api/<ProdutosController>/5
+        [HttpPut("{id:int}")]
+        public async Task<ActionResult<Produto>> Put(int id, [FromBody] Produto produto)
         {
             if (id != produto.ProdutoId)
             {
-                return BadRequest($"O ID: {id} do produto: {produto} não corresponde ao ID da URL.");
+                return BadRequest($"O ID: {id} do produto não corresponde ao ID da URL.");
             }
-            _context.Entry(produto).State = EntityState.Modified;
-            _context.SaveChanges();
 
-            return Ok(produto);
+            await _repository.UpdateAsync(produto);
+            await _repository.SaveChangesAsync();
 
+            return Ok(produto); // HTTP 200 OK
+        }
+
+        // DELETE api/<ProdutosController>/5
+        [HttpDelete("{id:int}")]
+        public async Task<ActionResult> Delete(int id)
+        {
+            var deleted = await _repository.DeleteAsync<Produto>(id);
+            if (!deleted)
+            {
+                return NotFound($"Product with ID {id} not found."); // HTTP 404 Not Found
+            }
+
+            await _repository.SaveChangesAsync();
+            return NoContent(); // HTTP 204 No Content
         }
     }
 }

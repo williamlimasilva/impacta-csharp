@@ -1,0 +1,25 @@
+﻿@model Grade
+
+@{
+    ViewData["Title"] = "Alunos por Turma";
+}
+
+<h2>Turma: @Model.GradeName</h2>
+<p>
+    <a asp-action="Create" asp-route-gradeId="@Model.GradeId" class="btn btn-success">Adicionar Aluno</a>
+</p>
+
+@if (Model.Students != null && Model.Students.Any())
+{
+    <p>Lista de Alunos:</p>
+    <ul>
+        @foreach (var student in Model.Students)
+        {
+            <li>@student.Name</li>
+        }
+    </ul>
+}
+else
+{
+    <p>Nenhum aluno cadastrado nesta turma.</p>
+}

@@ -1,6 +1,5 @@
-﻿using ApiCatalogo.Data;
-using ApiCatalogo.Models;
-using Microsoft.AspNetCore.Http;
+﻿using ApiCatalogo.Models;
+using ApiCatalogo.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ApiCatalogo.Controllers
@@ -9,81 +8,75 @@ namespace ApiCatalogo.Controllers
     [ApiController]
     public class CategoriasController : ControllerBase
     {
-        private readonly AppDbContext _context;
-        public CategoriasController(AppDbContext context)
+        private readonly IRepository _repository;
+
+        public CategoriasController(IRepository repository)
         {
-            _context = context;
+            _repository = repository;
         }
 
-        // GET: api/Categorias
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public async Task<ActionResult<IEnumerable<Categoria>>> GetAsync()
         {
-            var categorias = _context.Categorias.Select(c => c.Nome).ToList();
-            if (categorias == null || !categorias.Any())
-            {
-                return NotFound("No categories found."); //HTTP 404 Not Found
-            }
-            return Ok(categorias); //HTTP 200 OK
+            var categorias = await _repository.GetAllAsync<Categoria>();
+            return Ok(categorias);
         }
 
-        // GET: api/Categorias/1
-        [HttpGet("{id:int}")]
-        public ActionResult<Categoria> Get(int id)
-        { 
-            var categoria = _context.Categorias.FirstOrDefault(c => c.CategoriaId == id);
-            if (categoria == null)
+        // <<< MUDANÇA 1: Adicionar Name = "ObterCategoria" para o Post funcionar
+        [HttpGet("{id:int}", Name = "ObterCategoria")]
+        public async Task<ActionResult<Categoria>> GetAsync(int id)
+        {
+            // <<< MUDANÇA 2: Usar o novo método para buscar com produtos
+            var categoria = await _repository.GetCategoriaComProdutosAsync(id);
+
+            // <<< MUDANÇA 3: Validar se a categoria foi encontrada
+            if (categoria is null)
             {
-                return NotFound($"Category with ID {id} not found."); //HTTP 404 Not Found
+                return NotFound("Categoria não localizada.");
             }
-            return Ok(categoria); //HTTP 200 OK
+            return Ok(categoria);
         }
 
-        // POST: api/Categorias
         [HttpPost]
-        public ActionResult<Categoria> Post([FromBody] Categoria categoria)
+        public async Task<ActionResult<Categoria>> PostAsync(Categoria categoria)
         {
-            if (categoria == null)
-            {
-                return BadRequest("Category data is null."); //HTTP 400 Bad Request
-            }
-            _context.Categorias.Add(categoria);
-            _context.SaveChanges();
-            return CreatedAtAction(nameof(Get), new { id = categoria.CategoriaId }, categoria); //HTTP 201 Created
+            if (categoria is null) return BadRequest();
+
+            await _repository.AddAsync(categoria);
+            await _repository.SaveChangesAsync();
+
+            // Agora a rota "ObterCategoria" existe e o CreatedAtRouteResult funcionará
+            return new CreatedAtRouteResult("ObterCategoria", new { id = categoria.CategoriaId }, categoria);
         }
 
-        // PUT: api/Categorias/1
         [HttpPut("{id:int}")]
-        public ActionResult<Categoria> Put(int id, [FromBody] Categoria categoria)
+        public async Task<ActionResult> PutAsync(int id, Categoria categoria)
         {
-            if (categoria == null || categoria.CategoriaId != id)
+            // <<< MELHORIA: Validar se o ID da rota é o mesmo do objeto
+            if (id != categoria.CategoriaId)
             {
-                return BadRequest("Category data is null or ID mismatch."); //HTTP 400 Bad Request
+                return BadRequest("O id da rota não corresponde ao id do objeto.");
             }
-            var existingCategoria = _context.Categorias.FirstOrDefault(c => c.CategoriaId == id);
-            if (existingCategoria == null)
-            {
-                return NotFound($"Category with ID {id} not found."); //HTTP 404 Not Found
-            }
-            existingCategoria.Nome = categoria.Nome;
-            existingCategoria.ImagemUrl = categoria.ImagemUrl;
-            _context.Categorias.Update(existingCategoria);
-            _context.SaveChanges();
-            return Ok(existingCategoria); //HTTP 200 OK
+
+            await _repository.UpdateAsync(categoria);
+            await _repository.SaveChangesAsync();
+
+            return Ok(categoria);
         }
 
-        // DELETE: api/Categorias/1
         [HttpDelete("{id:int}")]
-        public ActionResult<Categoria> Delete(int id)
+        public async Task<ActionResult> DeleteAsync(int id)
         {
-            var categoria = _context.Categorias.FirstOrDefault(c => c.CategoriaId == id);
-            if (categoria == null)
+            // <<< MUDANÇA: Usar 'await' em vez de '.Result' para evitar bloqueios
+            var deleted = await _repository.DeleteAsync<Categoria>(id);
+
+            if (!deleted)
             {
-                return NotFound($"Category with ID {id} not found."); //HTTP 404 Not Found
+                return NotFound("Categoria não localizada.");
             }
-            _context.Categorias.Remove(categoria);
-            _context.SaveChanges();
-            return NoContent(); //HTTP 204 No Content
+
+            await _repository.SaveChangesAsync();
+            return NoContent();
         }
     }
 }
