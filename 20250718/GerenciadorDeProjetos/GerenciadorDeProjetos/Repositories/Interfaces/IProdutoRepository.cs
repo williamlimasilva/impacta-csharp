@@ -6,5 +6,6 @@ namespace GerenciadorDeProjetos.Repositories.Interfaces
     {
         // Define um método para buscar um produto
         Task AddAsync(Produto produto);
+        Task<IEnumerable<Produto>> GetAllAsync();
     }
 }

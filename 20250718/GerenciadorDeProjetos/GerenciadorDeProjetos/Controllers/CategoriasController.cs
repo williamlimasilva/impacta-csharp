@@ -1,41 +1,33 @@
-﻿using GerenciadorDeProjetos.DTOs;
+﻿using GerenciadorDeProjetos.Data;
+using GerenciadorDeProjetos.DTOs;
 using GerenciadorDeProjetos.Models;
 using GerenciadorDeProjetos.Repositories.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace GerenciadorDeProjetos.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/[controller]")]  //Rota base: /api/categorias
     public class CategoriasController : ControllerBase
     {
-        // SAI #1
-        // private readonly AppDbContext _context;
 
-        // public CategoriasController(AppDbContext context)
+        // SAI
+        // private readonly ICategoriaRepository _categoriaRepository;
+        // public CategoriasController(ICategoriaRepository categoriaRepository)
         // {
-        //     _context = context;
+        //     _categoriaRepository = categoriaRepository;
         // }
 
-        // ENTRA #1
-        // SAI #2
-        //private readonly ICategoriaRepository _categoriaRepository;
-
-        //// Agora o controller depende da ABSTRAÇÃO (interface) e não da implementação.
-        //public CategoriasController(ICategoriaRepository categoriaRepository)
-        //{
-        //    _categoriaRepository = categoriaRepository;
-        //}
-
-        // ENTRA #2
+        // ENTRA
         private readonly IUnitOfWork _uow;
-
         public CategoriasController(IUnitOfWork uow)
         {
             _uow = uow;
         }
 
-        // POST /api/categorias
+
+
         [HttpPost]
         // SAI
         // public async Task<IActionResult> CriarCategoria([FromBody] Categoria categoria)
@@ -55,35 +47,11 @@ namespace GerenciadorDeProjetos.Controllers
             var categoriaResultDto = new CategoriaComProdutosDto
             {
                 Id = categoria.Id,
-                Nome = categoria.Nome
-            };
-
-
-            return CreatedAtAction(nameof(BuscarCategoriaPorId), new { id = categoria.Id }, categoriaResultDto);
-        }
-
-        // Endpoint para buscar uma categoria específica pelo seu ID, incluindo seus produtos.
-        // GET /api/categorias/{id}
-        [HttpGet("{id}")]
-        public async Task<IActionResult> BuscarCategoriaPorId(int id)
-        {
-            var categoria = await _uow.CategoriaRepository.GetByIdWithProductsAsync(id);
-
-            if (categoria == null)
-            {
-                return NotFound("Categoria não encontrada.");
-            }
-
-            // SAI
-            // return Ok(categoria);
-
-            // ENTRA
-            // Mapeamento manual da entidade Categoria para o nosso DTO.
-            var categoriaDto = new CategoriaComProdutosDto
-            {
-                Id = categoria.Id,
                 Nome = categoria.Nome,
-                // Usamos Linq para transformar cada Produto da lista em um ProdutoDto.
+                // Usamos a propriedade .Count da coleção de Produtos para obter o número real.
+                // A contagem é sempre precisa e baseada nos dados atuais.
+                QuantidadeDeProdutos = categoria.Produtos.Count,
+
                 Produtos = categoria.Produtos.Select(p => new ProdutoDto
                 {
                     Id = p.Id,
@@ -92,8 +60,49 @@ namespace GerenciadorDeProjetos.Controllers
                 }).ToList()
             };
 
-            // Retornamos o DTO, que é um objeto limpo e sem referências circulares.
+
+
+
+            return CreatedAtAction(nameof(BuscarCategoriaPorId), new { id = categoria.Id }, categoriaResultDto);
+        }
+
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> BuscarCategoriaPorId(int id)
+        {
+            // O método GetByIdWithProductsAsync já faz o .Include(c => c.Produtos),
+            // então a lista de produtos já está disponível na memória.
+            var categoria = await _uow.CategoriaRepository.GetByIdWithProductsAsync(id);
+
+            if (categoria == null)
+            {
+                return NotFound("Categoria não encontrada.");
+            }
+
+            var categoriaDto = new CategoriaComProdutosDto
+            {
+                Id = categoria.Id,
+                Nome = categoria.Nome,
+
+                // SAI
+                // QuantidadeDeProdutos = categoria.QuantidadeDeProdutos,
+
+                // ENTRA
+                // Aqui está a mágica!
+                // Usamos a propriedade .Count da coleção de Produtos para obter o número real.
+                // A contagem é sempre precisa e baseada nos dados atuais.
+                QuantidadeDeProdutos = categoria.Produtos.Count,
+
+                Produtos = categoria.Produtos.Select(p => new ProdutoDto
+                {
+                    Id = p.Id,
+                    Nome = p.Nome,
+                    Preco = p.Preco
+                }).ToList()
+            };
+
             return Ok(categoriaDto);
         }
+
     }
 }

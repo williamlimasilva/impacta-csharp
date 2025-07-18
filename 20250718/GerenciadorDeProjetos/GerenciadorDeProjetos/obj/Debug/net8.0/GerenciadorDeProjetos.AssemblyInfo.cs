@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GerenciadorDeProjetos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac4c5ddedaf1abec558a6d7056469c5c9f6c0584")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c8e8b2f4a053bacf0aee1e34c3d34f72169cf69")]
 [assembly: System.Reflection.AssemblyProductAttribute("GerenciadorDeProjetos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GerenciadorDeProjetos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -33,6 +33,9 @@ namespace GerenciadorDeProjetos.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("QuantidadeDeProdutos")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.ToTable("Categorias");

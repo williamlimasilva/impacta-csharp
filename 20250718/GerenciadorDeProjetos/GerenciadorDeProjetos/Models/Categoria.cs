@@ -10,4 +10,6 @@ public class Categoria
     // É ESSENCIAL para o EF Core entender a relação.
     // ATENÇÃO: Essa linha será a causa do nosso futuro erro de serialização.
     public ICollection<Produto> Produtos { get; set; } = new List<Produto>();
+
+    public int QuantidadeDeProdutos { get; set; }
 }

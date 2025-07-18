@@ -8,8 +8,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "categoria",
-        "Type": "GerenciadorDeProjetos.Models.Categoria",
+        "Name": "categoriaDto",
+        "Type": "GerenciadorDeProjetos.DTOs.CriarCategoriaDto",
         "IsRequired": true
       }
     ],
@@ -40,32 +40,21 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "produto",
-        "Type": "GerenciadorDeProjetos.Models.Produto",
+        "Name": "produtoDto",
+        "Type": "GerenciadorDeProjetos.DTOs.CriarProdutoDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "GerenciadorDeProjetos.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
+    "ContainingType": "GerenciadorDeProjetos.Controllers.ProdutosController",
+    "Method": "ListarTodosProdutos",
+    "RelativePath": "api/Produtos",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[GerenciadorDeProjetos.WeatherForecast, GerenciadorDeProjetos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ],
-    "EndpointName": "GetWeatherForecast"
+    "ReturnTypes": []
   }
 ]

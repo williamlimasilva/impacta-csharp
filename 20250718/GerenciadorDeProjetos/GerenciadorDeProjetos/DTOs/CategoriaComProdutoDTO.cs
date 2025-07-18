@@ -7,6 +7,12 @@
         public int Id { get; set; }
         public string Nome { get; set; }
 
+        // ENTRA
+        // Adicionamos o campo que queremos expor na nossa API.
+        public int QuantidadeDeProdutos { get; set; }
+
+
+
         // A lista não é de "Produto", e sim de "ProdutoDto".
         // Como "ProdutoDto" não tem uma referência de volta para Categoria, o ciclo é quebrado.
         public ICollection<ProdutoDto> Produtos { get; set; }

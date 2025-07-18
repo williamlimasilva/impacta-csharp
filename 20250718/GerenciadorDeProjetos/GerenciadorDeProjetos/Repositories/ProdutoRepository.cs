@@ -1,6 +1,7 @@
 ﻿using GerenciadorDeProjetos.Data;
 using GerenciadorDeProjetos.Models;
 using GerenciadorDeProjetos.Repositories.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace GerenciadorDeProjetos.Repositories;
 
@@ -16,7 +17,10 @@ public class ProdutoRepository : IProdutoRepository
     public async Task AddAsync(Produto produto)
     {
         await _context.Produtos.AddAsync(produto);
-        // Novamente, sem SaveChangesAsync() aqui.
     }
 
+    public async Task<IEnumerable<Produto>> GetAllAsync()
+    {
+        return await _context.Produtos.ToListAsync();
+    }
 }
