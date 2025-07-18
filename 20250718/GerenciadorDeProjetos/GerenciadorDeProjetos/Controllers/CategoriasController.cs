@@ -1,9 +1,7 @@
-﻿using GerenciadorDeProjetos.Data;
+﻿using GerenciadorDeProjetos.DTOs;
 using GerenciadorDeProjetos.Models;
 using GerenciadorDeProjetos.Repositories.Interfaces;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace GerenciadorDeProjetos.Controllers
 {
@@ -37,15 +35,31 @@ namespace GerenciadorDeProjetos.Controllers
             _uow = uow;
         }
 
-        // POST: api/Categorias
+        // POST /api/categorias
         [HttpPost]
-        public async Task<IActionResult> CriarCategoria([FromBody] Categoria categoria)
+        // SAI
+        // public async Task<IActionResult> CriarCategoria([FromBody] Categoria categoria)
+        // ENTRA
+        public async Task<IActionResult> CriarCategoria([FromBody] CriarCategoriaDto categoriaDto)
         {
-            //await _categoriaRepository.AddAsync(categoria);
-            //await _categoriaRepository.SaveChangesAsync();
+            // Mapeamento do DTO para a Entidade
+            var categoria = new Categoria
+            {
+                Nome = categoriaDto.Nome
+            };
+
             await _uow.CategoriaRepository.AddAsync(categoria);
             await _uow.CommitAsync();
-            return CreatedAtAction(nameof(BuscarCategoriaPorId), new { id = categoria.Id }, categoria);
+
+            // Mapeamento da Entidade para um DTO de retorno (opcional, mas boa prática)
+            var categoriaResultDto = new CategoriaComProdutosDto
+            {
+                Id = categoria.Id,
+                Nome = categoria.Nome
+            };
+
+
+            return CreatedAtAction(nameof(BuscarCategoriaPorId), new { id = categoria.Id }, categoriaResultDto);
         }
 
         // Endpoint para buscar uma categoria específica pelo seu ID, incluindo seus produtos.
@@ -53,13 +67,6 @@ namespace GerenciadorDeProjetos.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> BuscarCategoriaPorId(int id)
         {
-            // SAI
-            // var categoria = await _context.Categorias
-            //                               .Include(c => c.Produtos)
-            //                               .FirstOrDefaultAsync(c => c.Id == id);
-
-            // ENTRA
-            //var categoria = await _categoriaRepository.GetByIdWithProductsAsync(id);
             var categoria = await _uow.CategoriaRepository.GetByIdWithProductsAsync(id);
 
             if (categoria == null)
@@ -67,9 +74,26 @@ namespace GerenciadorDeProjetos.Controllers
                 return NotFound("Categoria não encontrada.");
             }
 
-            return Ok(categoria);
+            // SAI
+            // return Ok(categoria);
 
+            // ENTRA
+            // Mapeamento manual da entidade Categoria para o nosso DTO.
+            var categoriaDto = new CategoriaComProdutosDto
+            {
+                Id = categoria.Id,
+                Nome = categoria.Nome,
+                // Usamos Linq para transformar cada Produto da lista em um ProdutoDto.
+                Produtos = categoria.Produtos.Select(p => new ProdutoDto
+                {
+                    Id = p.Id,
+                    Nome = p.Nome,
+                    Preco = p.Preco
+                }).ToList()
+            };
+
+            // Retornamos o DTO, que é um objeto limpo e sem referências circulares.
+            return Ok(categoriaDto);
         }
-
     }
 }

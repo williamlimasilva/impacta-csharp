@@ -1,4 +1,4 @@
-﻿using GerenciadorDeProjetos.Data;
+﻿using GerenciadorDeProjetos.DTOs;
 using GerenciadorDeProjetos.Models;
 using GerenciadorDeProjetos.Repositories.Interfaces;
 using Microsoft.AspNetCore.Mvc;
@@ -9,14 +9,8 @@ namespace GerenciadorDeProjetos.Controllers
     [Route("api/[controller]")] // Rota base: /api/produtos
     public class ProdutosController : ControllerBase
     {
-        // SAI
-        // private readonly AppDbContext _context;
-        // public ProdutosController(AppDbContext context)
-        // {
-        //    _context = context;
-        // }
 
-        // ENTRA
+
         private readonly IUnitOfWork _uow;
         public ProdutosController(IUnitOfWork uow)
         {
@@ -27,30 +21,41 @@ namespace GerenciadorDeProjetos.Controllers
         // Endpoint para criar um novo produto.
         // POST /api/produtos
         [HttpPost]
-        public async Task<IActionResult> CriarProduto([FromBody] Produto produto)
+        // SAI
+        // public async Task<IActionResult> CriarProduto([FromBody] Produto produto)
+        // ENTRA
+        public async Task<IActionResult> CriarProduto([FromBody] CriarProdutoDto produtoDto)
         {
             // SAI
-            // var categoriaExistente = await _context.Categorias.FindAsync(produto.CategoriaId);
-
+            // var categoriaExistente = await _uow.CategoriaRepository.FindByIdAsync(produto.CategoriaId);
             // ENTRA
-            var categoriaExistente = await _uow.CategoriaRepository.FindByIdAsync(produto.CategoriaId);
+            var categoriaExistente = await _uow.CategoriaRepository.FindByIdAsync(produtoDto.CategoriaId);
 
             if (categoriaExistente == null)
             {
                 return BadRequest("A CategoriaId fornecida não existe.");
             }
 
-            // SAI
-            // await _context.Produtos.AddAsync(produto);
-            // await _context.SaveChangesAsync();
+            // Mapeamento do DTO para a Entidade
+            var produto = new Produto
+            {
+                Nome = produtoDto.Nome,
+                Preco = produtoDto.Preco,
+                CategoriaId = produtoDto.CategoriaId
+            };
 
-            // ENTRA
             await _uow.ProdutoRepository.AddAsync(produto);
             await _uow.CommitAsync();
 
-            return Ok(produto);
+            // Mapeamento da entidade criada para um DTO de resposta
+            var produtoResultDto = new ProdutoDto
+            {
+                Id = produto.Id,
+                Nome = produto.Nome,
+                Preco = produto.Preco
+            };
+
+            return Ok(produtoResultDto);
         }
-
     }
-
 }
