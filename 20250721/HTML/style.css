@@ -1,0 +1,328 @@
+:root {
+  --amarelo: #ffe600;
+  --azul: #0097d7;
+  --cinza: #f7f7f7;
+  --cinza2: #ededed;
+  --preto: #222;
+  --branco: #fff;
+  font-size: 16px;
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--cinza);
+  color: var(--preto);
+}
+header {
+  background: var(--branco);
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.04);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.125rem 2rem 0 2rem;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--azul);
+  letter-spacing: 0.0625rem;
+}
+.logo img,
+.logo svg {
+  height: 3rem;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  color: var(--azul);
+}
+.logo svg .st0,
+.logo svg path {
+  fill: currentColor;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.75rem;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  text-decoration: none;
+  color: var(--preto);
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+nav a:hover {
+  color: var(--azul);
+}
+.header-bar {
+  background: var(--amarelo);
+  color: var(--preto);
+  text-align: center;
+  font-weight: 600;
+  padding: 0.5rem 0;
+  font-size: 1.1rem;
+  letter-spacing: 0.03125rem;
+}
+.busca-bar {
+  background: var(--branco);
+  padding: 1.125rem 0 1.125rem 0;
+  border-bottom: 0.0625rem solid var(--cinza2);
+  display: flex;
+  justify-content: center;
+}
+.busca-bar form {
+  display: flex;
+  gap: 0.75rem;
+  background: var(--cinza2);
+  padding: 0.75rem 1.125rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.04);
+}
+.busca-bar select {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.625rem 0.75rem;
+  padding-right: 2.5rem;
+  font-size: 1rem;
+  outline: none;
+}
+.busca-bar input {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.625rem 0.75rem;
+  font-size: 1rem;
+  outline: none;
+}
+.busca-bar button {
+  background: var(--azul);
+  color: var(--branco);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.625rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.busca-bar button:hover {
+  background: #005b8e;
+}
+main {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.promocoes {
+  display: flex;
+  gap: 1.125rem;
+  margin: 2rem 0 1.5rem 0;
+  overflow-x: auto;
+}
+.promo-card {
+  background: var(--amarelo);
+  color: var(--preto);
+  border-radius: 1.125rem;
+  box-shadow: 0 0.125rem 0.75rem rgba(0, 0, 0, 0.07);
+  padding: 1.5rem 2rem;
+  min-width: 13.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.promo-card.destaque {
+  background: var(--azul);
+  color: var(--branco);
+}
+.promo-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.promo-desc {
+  font-size: 1rem;
+  margin-top: 0.375rem;
+}
+.pacotes,
+.hospedagens {
+  background: var(--branco);
+  border-radius: 1.125rem;
+  margin: 2rem 0;
+  padding: 2rem 0 1.5rem 0;
+  box-shadow: 0 0.125rem 0.75rem rgba(0, 0, 0, 0.04);
+}
+.pacotes h2,
+.hospedagens h2,
+.mapa-lojas h2,
+.newsletter h2 {
+  color: var(--azul);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  padding-left: 1.5rem;
+}
+.pacotes-grid,
+.hospedagens-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-left: 1.5rem;
+}
+.pacote-card,
+.hospedagem-card {
+  background: var(--cinza2);
+  border-radius: 0.875rem;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.06);
+  width: 16.25rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.125rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.pacote-card:hover,
+.hospedagem-card:hover {
+  transform: translateY(-0.375rem) scale(1.03);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 151, 215, 0.13);
+}
+.pacote-card img,
+.hospedagem-card img {
+  width: 100%;
+  height: 8.75rem;
+  object-fit: cover;
+}
+.pacote-card div,
+.hospedagem-card div {
+  padding: 0.875rem 0.75rem 0.75rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.pacote-card h3,
+.hospedagem-card h3 {
+  color: var(--azul);
+  margin: 0 0 0.125rem 0;
+  font-size: 1.1rem;
+}
+.preco {
+  color: var(--amarelo);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.mapa-lojas {
+  background: var(--amarelo);
+  border-radius: 1.125rem;
+  margin: 2rem 0;
+  padding: 2rem 0 1.5rem 0;
+  box-shadow: 0 0.125rem 0.75rem rgba(0, 0, 0, 0.04);
+  text-align: left;
+}
+.mapa-fake {
+  background: var(--cinza2);
+  border-radius: 0.75rem;
+  height: 13.75rem;
+  margin: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+.newsletter {
+  background: var(--branco);
+  border-radius: 1.125rem;
+  margin: 2rem 0;
+  padding: 2rem 0 1.5rem 0;
+  box-shadow: 0 0.125rem 0.75rem rgba(0, 0, 0, 0.04);
+  text-align: left;
+}
+.newsletter form {
+  display: flex;
+  gap: 0.75rem;
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+.newsletter input[type="email"] {
+  border: 0.0625rem solid #ddd;
+  border-radius: 0.5rem;
+  padding: 0.625rem 0.75rem;
+  font-size: 1rem;
+  width: 16.25rem;
+}
+.newsletter button {
+  background: var(--azul);
+  color: var(--branco);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.625rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.newsletter button:hover {
+  background: #005b8e;
+}
+footer {
+  background: var(--preto);
+  color: var(--branco);
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 2rem 0.5rem 2rem;
+  flex-wrap: wrap;
+}
+.footer-top a {
+  color: var(--amarelo);
+  text-decoration: none;
+  margin: 0 0.25rem;
+}
+.footer-bottom {
+  text-align: center;
+  padding: 0.75rem 0 0.5rem 0;
+  background: #181818;
+  font-size: 0.95rem;
+}
+@media (max-width: 56.25rem) {
+  .header-top,
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1.125rem 0.75rem 0 0.75rem;
+  }
+  .pacotes-grid,
+  .hospedagens-grid {
+    flex-direction: column;
+    gap: 1.125rem;
+    padding-left: 0;
+    align-items: center;
+  }
+  .promo-card,
+  .pacote-card,
+  .hospedagem-card {
+    width: 90vw;
+    max-width: 21.875rem;
+  }
+  .mapa-fake {
+    margin: 0 0.5rem;
+  }
+  .newsletter form {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-left: 0;
+  }
+}
